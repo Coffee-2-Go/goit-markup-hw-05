@@ -582,26 +582,28 @@
             >
             <textarea
               id="user-comment"
-              name="usser-comment"
-              class="modal-form-comment"
+              name="user-comment"
+              class="modal-form-comment small-text"
               placeholder="Text input"
             ></textarea>
           </div>
-          <input
-            id="user-privacy"
-            type="checkbox"
-            name="user-privacy"
-            class="modal-form-checkbox hidden"
-            required
-          />
-          <label for="user-privacy" class="modal-form-check-desc small-text"
-            >I accept the terms and conditions of the&nbsp;
-            <a
-              href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:31995L0046"
-              class="privacy-policy-link"
-              >Privacy Policy</a
-            >
-          </label>
+          <div class="checkbox-wrapper">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              class="modal-form-checkbox hidden"
+              required
+            />
+            <label for="user-privacy" class="modal-form-check-desc small-text"
+              >I accept the terms and conditions of the&nbsp;
+              <a
+                href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:31995L0046"
+                class="privacy-policy-link"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
           <button type="submit" class="modal-btn button-text">Send</button>
         </form>
       </div>
