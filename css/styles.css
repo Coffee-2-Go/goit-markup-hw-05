@@ -639,6 +639,10 @@ button {
   fill: var(--IRIS);
 }
 
+.text-area-wrapper {
+  margin-bottom: 16px;
+}
+
 .modal-form-comment {
   resize: none;
   padding: 8px 16px;
@@ -686,7 +690,6 @@ button {
 
 .modal-form-check-desc {
   margin-bottom: 24px;
-  margin-top: 16px;
   color: var(--LIGHT-SLATE);
   display: flex;
   align-items: center;
