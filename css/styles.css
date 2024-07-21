@@ -116,7 +116,7 @@ button {
 
 .small-text {
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: var(--spacing-wide);
 }
 
@@ -611,6 +611,8 @@ button {
   border: 1px solid var(--NAVY-BLUE-MODAL);
   border-radius: 4px;
   padding-left: 38px;
+  background-color: transparent;
+  outline: transparent;
   transition: border-color var(--transition-specs);
 }
 
@@ -621,8 +623,6 @@ button {
   transform: translate(0, -50%);
   fill: var(--NAVY-BLUE);
   display: block;
-  width: 18px;
-  height: 24px;
   transition: fill var(--transition-specs);
 }
 
@@ -632,7 +632,6 @@ button {
 }
 
 .modal-form-input:focus {
-  outline: none;
   border-color: var(--IRIS);
 }
 
