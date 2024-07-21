@@ -459,17 +459,21 @@ button {
 
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 
 .footer-form-input {
   color: var(--WHITE);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: var(--spacing-wide);
   width: 264px;
   height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   border: 1px solid var(--WHITE);
   border-radius: 4px;
   padding-left: 16px;
-  margin-right: 24px;
   transition: border-color var(--transition-specs);
 }
 
@@ -505,8 +509,6 @@ button {
 
 .submit-btn-icon {
   fill: var(--WHITE);
-  width: 24px;
-  height: 24px;
   margin-left: 16px;
 }
 
@@ -532,19 +534,21 @@ button {
 
 .modal {
   position: absolute;
-  top: 38%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 584px;
-  padding: 24px;
+  min-height: 584px;
+  padding: 72px 24px 24px 24px;
   border-radius: 4px;
   background-color: var(--DAIRY);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition-specs);
 }
 
 .modal-close-btn-icon {
-  width: 8px;
-  height: 8px;
+  transition: fill var(--transition-specs); 
 }
 
 .modal-close-btn {
@@ -562,14 +566,18 @@ button {
   padding: 0;
   fill: var(--NAVY-BLUE);
   transition: background-color var(--transition-specs),
-    border var(--transition-specs), fill var(--transition-specs);
+    border var(--transition-specs);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon{
+  fill: var(--WHITE)
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: var(--OCEAN);
   border: none;
-  fill: var(--WHITE);
 }
 
 /* =============== MODAL FORM =============== */
@@ -578,13 +586,16 @@ button {
   color: var(--NAVY-BLUE);
   font-weight: var(--weight-medium);
   text-align: center;
-  margin-top: 48px;
   margin-bottom: 16px;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
+}
+
+.modal-form-field-wrapper {
+  margin-bottom: 8px;
 }
 
 .modal-form-input-desc {
@@ -618,7 +629,6 @@ button {
 .modal-form-input-wrapper {
   position: relative;
   display: block;
-  margin-bottom: 8px;
 }
 
 .modal-form-input:focus {

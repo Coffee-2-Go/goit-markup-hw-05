@@ -1,4 +1,4 @@
-# Tier 2. Module 1. Homework 3 - Decorative effects. Animation
+# Tier 2. Module 1. Homework 5 - Forms and tables
 
 * Create repository `goit-markup-hw-05`.
 * Clone the created repository and copy the files of previous work to it.
