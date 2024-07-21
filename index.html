@@ -520,22 +520,23 @@
         </p>
         <form class="modal-form">
           <div class="modal-form-field-wrapper">
-            <label class="modal-form-field">
-              <span class="modal-form-input-desc small-text">Name</span>
-              <div class="modal-form-input-wrapper">
-                <input
-                  type="text"
-                  name="user_name"
-                  class="modal-form-input"
-                  required
-                  pattern="^(?!.*[ \-]{2})[a-zA-Z\s\-]{3,20}$"
-                  title="Username should be 3-16 characters long and can only contain letters, spaces, and hyphens."
-                />
-                <svg class="modal-form-input-icon">
-                  <use href="./images/icons.svg#icon-user"></use>
-                </svg>
-              </div>
-            </label>
+            <label for="user-name" class="modal-form-input-desc small-text"
+              >Name</label
+            >
+            <div class="modal-form-input-wrapper">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="modal-form-input"
+                required
+                pattern="^(?!.*[ \-]{2})[a-zA-Z\s\-]{3,20}$"
+                title="Username should be 3-16 characters long and can only contain letters, spaces, and hyphens."
+              />
+              <svg class="modal-form-input-icon">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-form-field-wrapper">
             <label class="modal-form-field">
