@@ -638,7 +638,7 @@ button {
   border-color: var(--IRIS);
 }
 
-.modal-form-input:focus .modal-form-input-icon {
+.modal-form-input:focus + .modal-form-input-icon {
   fill: var(--IRIS);
 }
 
@@ -698,7 +698,7 @@ button {
   fill: transparent;
 }
 
-.modal-form-checkbox:checked .modal-form-check {
+.modal-form-checkbox:checked + .modal-form-check {
   background-color: var(--OCEAN);
   border: none;
   fill: var(--CLOUD);
