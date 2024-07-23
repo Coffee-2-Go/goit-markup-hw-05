@@ -698,7 +698,7 @@ button {
   fill: transparent;
 }
 
-input[type="checkbox"]:checked + .modal-form-check {
+.modal-form-checkbox:checked + .modal-form-check {
   background-color: var(--OCEAN);
   border: none;
   fill: var(--CLOUD);
